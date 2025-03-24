@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgIf } from '@angular/common';
-import { FormComponent } from '../form/form.component';
+
 
 @Component({
   selector: 'app-confirmacion',
-  imports: [NgIf, FormComponent],
+  imports: [],
   templateUrl: './confirmacion.component.html',
   styleUrl: './confirmacion.component.css'
 })
@@ -21,5 +20,9 @@ export class ConfirmacionComponent {
     } else {
       document.body.style.overflow = '';
     }
+  }
+
+  confirmarAsistencia() {
+    alert("¡Gracias por confirmar tu asistencia!");
   }
 }
