@@ -11,10 +11,11 @@ import { FotoComponent } from './components/foto/foto.component';
 import { IntinerarioComponent } from './components/intinerario/intinerario.component';
 import { ListaRegalosComponent } from './components/lista-regalos/lista-regalos.component';
 import { VersiculoLemaComponent } from './components/versiculo-lema/versiculo-lema.component';
+import { FadeInDirective } from './directives/fade-in.directive';
 
 @Component({
   selector: 'app-root',
-  imports: [DespedidaComponent, BienvenidaComponent, ConfirmacionComponent, CuandoComponent, DondeComponent, ConfirmacionComponent, DresscodeComponent, FotoComponent, IntinerarioComponent, ListaRegalosComponent, VersiculoLemaComponent],
+  imports: [DespedidaComponent, BienvenidaComponent, ConfirmacionComponent, CuandoComponent, DondeComponent, ConfirmacionComponent, DresscodeComponent, FotoComponent, IntinerarioComponent, ListaRegalosComponent, VersiculoLemaComponent, FadeInDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
