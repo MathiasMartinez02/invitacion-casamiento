@@ -14,7 +14,7 @@ import { VersiculoLemaComponent } from './components/versiculo-lema/versiculo-le
 
 @Component({
   selector: 'app-root',
-  imports: [DespedidaComponent, BienvenidaComponent, ConfirmacionComponent, CuandoComponent, DondeComponent, ConfirmacionComponent, CuentaRegresivaComponent, DresscodeComponent, FotoComponent, IntinerarioComponent, ListaRegalosComponent, VersiculoLemaComponent],
+  imports: [DespedidaComponent, BienvenidaComponent, ConfirmacionComponent, CuandoComponent, DondeComponent, ConfirmacionComponent, DresscodeComponent, FotoComponent, IntinerarioComponent, ListaRegalosComponent, VersiculoLemaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
