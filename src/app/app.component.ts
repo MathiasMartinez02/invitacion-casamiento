@@ -12,13 +12,23 @@ import { IntinerarioComponent } from './components/intinerario/intinerario.compo
 import { ListaRegalosComponent } from './components/lista-regalos/lista-regalos.component';
 import { VersiculoLemaComponent } from './components/versiculo-lema/versiculo-lema.component';
 import { FadeInDirective } from './directives/fade-in.directive';
+import { FormComponent } from './components/form/form.component';
 
 @Component({
   selector: 'app-root',
-  imports: [DespedidaComponent, BienvenidaComponent, ConfirmacionComponent, CuandoComponent, DondeComponent, ConfirmacionComponent, DresscodeComponent, FotoComponent, IntinerarioComponent, ListaRegalosComponent, VersiculoLemaComponent, FadeInDirective],
+  imports: [DespedidaComponent, BienvenidaComponent, ConfirmacionComponent, CuandoComponent, DondeComponent, ConfirmacionComponent, DresscodeComponent, FotoComponent, IntinerarioComponent, ListaRegalosComponent, VersiculoLemaComponent, FadeInDirective, FormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'invitacion-casamiento';
+
+  ModalState: boolean = false;
+
+  abrirModal(state:boolean) {
+    this.ModalState = state;
+    document.body.classList.add('overflow-hidden'); 
+  }
+
+
 }

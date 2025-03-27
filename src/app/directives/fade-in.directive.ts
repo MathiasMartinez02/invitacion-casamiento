@@ -11,7 +11,7 @@ export class FadeInDirective implements AfterViewInit {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         this.renderer.addClass(this.el.nativeElement, 'animate-fadeInUp');
-        observer.disconnect(); // Deja de observar después de activarse
+        observer.disconnect(); 
       }
     }, { threshold: 0.3 });
 

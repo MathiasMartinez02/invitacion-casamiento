@@ -1,17 +1,15 @@
-
 <div class="bg-[#9a9a76] text-white p-6 text-center rounded-lg mb-6">
   <img decoding="async" src="https://latarjetadigital.com.ar/wp-content/uploads/2024/11/ffffff-blanco-icono-32.gif" alt="" width="70" height="70" loading="lazy" class="mx-auto">
   
   <h3 class="text-lg font-semibold mt-3">REGALOS</h3>
   <p class="text-[13px] mt-2">
-    NUESTRO MEJOR REGALO ES COMPARTIR CON QUIENES<br/>
-    AMAMOS PERO SI QUIEREN AYUDARNOS CON NUESTRA <br/>
+    NUESTRO MEJOR REGALO ES COMPARTIR CON QUIENES
+    AMAMOS PERO SI QUIEREN AYUDARNOS CON NUESTRA 
     CASITA O LA LUNA DE MIEL, SERIA DE BENDICION.
   </p>
 
-  <button (click)="abrirModal()" class="mt-4 px-6 py-2 border border-white text-white rounded-md hover:bg-white hover:text-[#9a9a76] transition">
+  <button (click)="Modal()" class="mt-4 px-6 py-2 border border-white text-white rounded-md hover:bg-white hover:text-[#9a9a76] transition">
     CONTRIBUIR
   </button>
 </div>
   
-<app-form [mostrar]="mostrarLunaDeMiel" (cerrar)="cerrarModal()"></app-form>

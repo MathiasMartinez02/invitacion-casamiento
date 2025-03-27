@@ -26,7 +26,7 @@
   </div>
 
   <div class="opacity-0" appFadeIn>
-      <app-lista-regalos></app-lista-regalos>
+      <app-lista-regalos (abrirModal)="abrirModal($event)"></app-lista-regalos>
   </div>
 
   <div class="opacity-0" appFadeIn>
@@ -46,4 +46,6 @@
   <div class="opacity-0" appFadeIn>
       <app-despedida></app-despedida>
   </div>
+
+  <app-form [mostrar]="ModalState" (abrirModal)="abrirModal($event)"></app-form>
 </div>

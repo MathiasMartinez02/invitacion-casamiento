@@ -9,9 +9,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class FormComponent {
   @Input() mostrar = false;
-  @Output() cerrar = new EventEmitter<void>();
+  @Output() abrirModal:EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  cerrarModal(): void {
-    this.cerrar.emit();
+  cerrarModal() {
+    this.abrirModal.emit(false);
+    document.body.classList.remove('overflow-hidden');
   }
 }

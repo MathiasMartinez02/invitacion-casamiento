@@ -1,35 +1,61 @@
-<div *ngIf="mostrar" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-    <div class="relative max-w-md w-full mx-4">
-      <button (click)="cerrarModal()" class="absolute top-2 right-2 text-white text-2xl font-bold z-10">
-        &times;
-      </button>
-      
-      <div class="bg-[#9a9a76] p-8 relative">
-        <div class="border border-white p-6">
-            <img decoding="async" src="https://latarjetadigital.com.ar/wp-content/uploads/2024/11/ffffff-blanco-icono-32.gif" alt="" width="70" height="70" loading="lazy" class="mx-auto">
-          
-          <h2 class="text-white text-center text-3xl font-bold mb-4">LUNA DE MIEL</h2>
-          
-          <p class="text-white text-center mb-4">
-            AYUDANOS A CREAR<br>
-            RECUERDOS INOLVIDABLES.<br>
-            ALIAS: MATHI.MARTINEZ
-          </p>
-          
+<div
+  *ngIf="mostrar"
+  class="fix inset-0 bg-black bg-opacity-50 flex items-center justify-center h-screen z-50"
+>
+  <!-- Contenedor del modal -->
+  <div
+    class="relative bg-[#9a9a76] p-8 border border-white max-w-sm w-full mx-4 rounded-lg shadow-lg z-50"
+  >
+    <!-- Botón de cerrar -->
+    <button
+      (click)="cerrarModal()"
+      class="absolute top-4 right-4 text-white text-2xl font-bold"
+    >
+      &times;
+    </button>
 
-          <div class="text-white text-center mb-6">
-            <img decoding="async" src="https://latarjetadigital.com.ar/wp-content/uploads/2024/11/ffffff-blanco-icono-12.gif" alt="" width="70" height="70" loading="lazy" class="mx-auto">
-            <h3 class="text-2xl font-bold mb-4">LISTA DE REGALOS</h3>
-            <p>AYUDANOS A EQUIPAR LA CASITA!<br/>
-                PARA INGRESAR A LA LISTITA <br/>
-                <a href="https://docs.google.com/spreadsheets/d/1vwIlJcj4ourpnIsOHopA2Yelz0Se5FY7nfY_5BGqslI/edit?usp=sharing" target="_blank" class="text-black">TOCA ACÁ </a>
-            </p>
-          </div>
-          
-          <p class="text-white text-center">
-            ¡GRACIAS DE CORAZÓN POR SU AMOR!
-          </p>
-        </div>
-      </div>
+    <!-- Contenido del modal -->
+    <div class="border border-white p-6 text-center">
+      <img
+        src="https://latarjetadigital.com.ar/wp-content/uploads/2024/11/ffffff-blanco-icono-32.gif"
+        alt="Ícono Luna de Miel"
+        width="70"
+        height="70"
+        loading="lazy"
+        class="mx-auto"
+      />
+
+      <h2 class="text-white text-3xl font-bold mb-4">LUNA DE MIEL</h2>
+
+      <p class="text-white mb-4">
+        AYÚDANOS A CREAR<br />
+        RECUERDOS INOLVIDABLES.<br />
+        ALIAS: <strong>MATHI.MARTINEZ</strong>
+      </p>
+
+      <img
+        src="https://latarjetadigital.com.ar/wp-content/uploads/2024/11/ffffff-blanco-icono-12.gif"
+        alt="Ícono Lista de Regalos"
+        width="70"
+        height="70"
+        loading="lazy"
+        class="mx-auto"
+      />
+
+      <h3 class="text-white text-2xl font-bold mb-4">LISTA DE REGALOS</h3>
+      <p class="text-white">
+        AYÚDANOS A EQUIPAR LA CASITA!<br />
+        PARA INGRESAR A LA LISTITA <br />
+        <a
+          href="https://docs.google.com/spreadsheets/d/1vwIlJcj4ourpnIsOHopA2Yelz0Se5FY7nfY_5BGqslI/edit?usp=sharing"
+          target="_blank"
+          class="text-black font-bold underline"
+        >
+          TOCA ACÁ
+        </a>
+      </p>
+
+      <p class="text-white mt-4">¡GRACIAS DE CORAZÓN POR SU AMOR!</p>
     </div>
   </div>
+</div>
