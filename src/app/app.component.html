@@ -1,50 +1,52 @@
 <div class="bg-gray-50 font">
   <div class="opacity-0" appFadeIn>
-      <app-bienvenida></app-bienvenida>
+    <app-bienvenida></app-bienvenida>
   </div>
 
   <div class="opacity-0" appFadeIn>
-      <app-versiculo-lema></app-versiculo-lema>
+    <app-versiculo-lema></app-versiculo-lema>
   </div>
 
   <div class="opacity-0" appFadeIn>
-      <app-cuando></app-cuando>
+    <app-cuando></app-cuando>
   </div>
 
   <div class="opacity-0" appFadeIn>
-      <app-donde></app-donde>
+    <app-donde></app-donde>
   </div>
 
   <div class="opacity-0" appFadeIn>
-      <app-foto 
-      [imageSrc]="'https://latarjetadigital.com.ar/wp-content/uploads/2024/11/pexels-hussein-altameemi-782843-10027126-576x1024.jpg'"
-      [imageAlt]="'Imagen 1'"></app-foto>
+    <app-foto
+      [imageSrc]="'assets/images/IMG_0851.webp'"
+      [imageAlt]="'Imagen 1'"
+    ></app-foto>
   </div>
 
   <div class="opacity-0" appFadeIn>
-      <app-intinerario></app-intinerario>
+    <app-intinerario></app-intinerario>
   </div>
 
   <div class="opacity-0" appFadeIn>
-      <app-lista-regalos (abrirModal)="abrirModal($event)"></app-lista-regalos>
+    <app-lista-regalos (abrirModal)="abrirModal($event)"></app-lista-regalos>
   </div>
 
   <div class="opacity-0" appFadeIn>
-      <app-foto 
-      [imageSrc]="'https://latarjetadigital.com.ar/wp-content/uploads/2024/11/pexels-hussein-altameemi-782843-10027125-576x1024.jpg'"
-      [imageAlt]="'Imagen 2'"></app-foto>
+    <app-foto
+      [imageSrc]="'assets/images/IMG_0768.webp'"
+      [imageAlt]="'Imagen 2'"
+    ></app-foto>
   </div>
 
   <div class="opacity-0" appFadeIn>
-      <app-dresscode></app-dresscode>
+    <app-dresscode></app-dresscode>
   </div>
 
   <div class="opacity-0" appFadeIn>
-      <app-confirmacion></app-confirmacion>
+    <app-confirmacion></app-confirmacion>
   </div>
 
   <div class="opacity-0" appFadeIn>
-      <app-despedida></app-despedida>
+    <app-despedida></app-despedida>
   </div>
 
   <app-form [mostrar]="ModalState" (abrirModal)="abrirModal($event)"></app-form>
